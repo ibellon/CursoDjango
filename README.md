@@ -84,4 +84,22 @@ nano .git/config
         email = ibellon@gmail.com
 
 
+# Volver a escribir el mensaje de confirmación más reciente
+## Puedes cambiar el mensaje de confirmación más reciente usando el comando git commit --amend.
 
+En Git, el texto del mensaje de confirmación es parte de la confirmación. Si cambias el mensaje de confirmación cambiará commit ID--i.e., la suma de comprobación SHA1 que designa la confirmación. Efectivamente, estás creando una nueva confirmación que reemplaza a la anterior.
+
+## La confirmación no ha sido subida en línea
+Si la confirmación solo existe en tu repositorio local y no ha sido subida a GitHub puedes modificar el mensaje de confirmación con el comando git commit --amend.
+
+## En la línea de comando, desplázate hasta el repositorio que contiene la confirmación que deseas modificar.
+
+Escribe git commit --amend y presiona Enter (Intro).
+
+## En tu editor de texto, edita el mensaje de confirmación y guarda la confirmación.
+
+Puedes agregar un coautor al agregar una introducción a la confirmación. Para obtener más información, consulta "Crear una confirmación con múltiples autores".
+
+Puedes crear confirmaciones en nombre de tu organización agregando una introducción al mensaje de la confirmación. Para obtener más información, consulta "Crear una confirmación en nombre de una organización"
+
+El nuevo mensaje y la confirmación aparecerán en GitHub la próxima vez que subas un cambio.
